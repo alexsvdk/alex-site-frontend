@@ -14,10 +14,17 @@ export const StyledLinkWrapper = styled.a`
     &:hover,&:visited,&:link {
       color: inherit;
     }
-  
+
     &:hover {
-      filter: brightness(150%);
-      cursor: pointer;
+        filter: none;
+        cursor: auto;
+    }
+  
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+      }
     }
 `
 

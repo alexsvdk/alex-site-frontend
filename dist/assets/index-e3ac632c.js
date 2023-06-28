@@ -177,10 +177,17 @@ Error generating stack: `+o.message+`
     &:hover,&:visited,&:link {
       color: inherit;
     }
-  
+
     &:hover {
-      filter: brightness(150%);
-      cursor: pointer;
+        filter: none;
+        cursor: auto;
+    }
+  
+    @media (hover: hover) {
+      &:hover {
+        filter: brightness(150%);
+        cursor: pointer;
+      }
     }
 `,Fg=Me.div`
     display: flex;
